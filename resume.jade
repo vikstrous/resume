@@ -1,0 +1,217 @@
+html
+  head
+    style(type="text/css")
+      /*
+      Copyright (c) 2008, Yahoo! Inc. All rights reserved.
+      Code licensed under the BSD License:
+      http://developer.yahoo.net/yui/license.txt
+      version: 2.5.1
+      */
+      html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym {border:0;font-variant:normal;}sup {vertical-align:text-top;}sub {vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,textarea,select{*font-size:100%;}legend{color:#000;}body {font:13px/1.231 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;}table {font-size:inherit;font:100%;}pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%;}
+      body{text-align:left;}#ft{clear:both;}#doc,#doc2,#doc3,#doc4,.yui-t1,.yui-t2,.yui-t3,.yui-t4,.yui-t5,.yui-t6,.yui-t7{margin:auto;text-align:left;width:57.69em;*width:56.25em;min-width:750px;}#doc2{width:73.076em;*width:71.25em;}#doc3{margin:auto 10px;width:auto;}#doc4{width:74.923em;*width:73.05em;}.yui-b{position:relative;}.yui-b{_position:static;}#yui-main .yui-b{position:static;}#yui-main{width:100%;}.yui-t1 #yui-main,.yui-t2 #yui-main,.yui-t3 #yui-main{float:right;margin-left:-25em;}.yui-t4 #yui-main,.yui-t5 #yui-main,.yui-t6 #yui-main{float:left;margin-right:-25em;}.yui-t1 .yui-b{float:left;width:12.30769em;*width:12.00em;}.yui-t1 #yui-main .yui-b{margin-left:13.30769em;*margin-left:13.05em;}.yui-t2 .yui-b{float:left;width:13.8461em;*width:13.50em;}.yui-t2 #yui-main .yui-b{margin-left:14.8461em;*margin-left:14.55em;}.yui-t3 .yui-b{float:left;width:23.0769em;*width:22.50em;}.yui-t3 #yui-main .yui-b{margin-left:24.0769em;*margin-left:23.62em;}.yui-t4 .yui-b{float:right;width:13.8456em;*width:13.50em;}.yui-t4 #yui-main .yui-b{margin-right:14.8456em;*margin-right:14.55em;}.yui-t5 .yui-b{float:right;width:18.4615em;*width:18.00em;}.yui-t5 #yui-main .yui-b{margin-right:19.4615em;*margin-right:19.125em;}.yui-t6 .yui-b{float:right;width:23.0769em;*width:22.50em;}.yui-t6 #yui-main .yui-b{margin-right:24.0769em;*margin-right:23.62em;}.yui-t7 #yui-main .yui-b{display:block;margin:0 0 1em 0;}#yui-main .yui-b{float:none;width:auto;}.yui-gb .yui-u,.yui-g .yui-gb .yui-u,.yui-gb .yui-g,.yui-gb .yui-gb,.yui-gb .yui-gc,.yui-gb .yui-gd,.yui-gb .yui-ge,.yui-gb .yui-gf,.yui-gc .yui-u,.yui-gc .yui-g,.yui-gd .yui-u{float:left;}.yui-g .yui-u,.yui-g .yui-g,.yui-g .yui-gb,.yui-g .yui-gc,.yui-g .yui-gd,.yui-g .yui-ge,.yui-g .yui-gf,.yui-gc .yui-u,.yui-gd .yui-g,.yui-g .yui-gc .yui-u,.yui-ge .yui-u,.yui-ge .yui-g,.yui-gf .yui-g,.yui-gf .yui-u{float:right;}.yui-g div.first,.yui-gb div.first,.yui-gc div.first,.yui-gd div.first,.yui-ge div.first,.yui-gf div.first,.yui-g .yui-gc div.first,.yui-g .yui-ge div.first,.yui-gc div.first div.first{float:left;}.yui-g .yui-u,.yui-g .yui-g,.yui-g .yui-gb,.yui-g .yui-gc,.yui-g .yui-gd,.yui-g .yui-ge,.yui-g .yui-gf{width:49.1%;}.yui-gb .yui-u,.yui-g .yui-gb .yui-u,.yui-gb .yui-g,.yui-gb .yui-gb,.yui-gb .yui-gc,.yui-gb .yui-gd,.yui-gb .yui-ge,.yui-gb .yui-gf,.yui-gc .yui-u,.yui-gc .yui-g,.yui-gd .yui-u{width:32%;margin-left:1.99%;}.yui-gb .yui-u{*margin-left:1.9%;*width:31.9%;}.yui-gc div.first,.yui-gd .yui-u{width:66%;}.yui-gd div.first{width:32%;}.yui-ge div.first,.yui-gf .yui-u{width:74.2%;}.yui-ge .yui-u,.yui-gf div.first{width:24%;}.yui-g .yui-gb div.first,.yui-gb div.first,.yui-gc div.first,.yui-gd div.first{margin-left:0;}.yui-g .yui-g .yui-u,.yui-gb .yui-g .yui-u,.yui-gc .yui-g .yui-u,.yui-gd .yui-g .yui-u,.yui-ge .yui-g .yui-u,.yui-gf .yui-g .yui-u{width:49%;*width:48.1%;*margin-left:0;}.yui-g .yui-gb div.first,.yui-gb .yui-gb div.first{*margin-right:0;*width:32%;_width:31.7%;}.yui-g .yui-gc div.first,.yui-gd .yui-g{width:66%;}.yui-gb .yui-g div.first{*margin-right:4%;_margin-right:1.3%;}.yui-gb .yui-gc div.first,.yui-gb .yui-gd div.first{*margin-right:0;}.yui-gb .yui-gb .yui-u,.yui-gb .yui-gc .yui-u{*margin-left:1.8%;_margin-left:4%;}.yui-g .yui-gb .yui-u{_margin-left:1.0%;}.yui-gb .yui-gd .yui-u{*width:66%;_width:61.2%;}.yui-gb .yui-gd div.first{*width:31%;_width:29.5%;}.yui-g .yui-gc .yui-u,.yui-gb .yui-gc .yui-u{width:32%;_float:right;margin-right:0;_margin-left:0;}.yui-gb .yui-gc div.first{width:66%;*float:left;*margin-left:0;}.yui-gb .yui-ge .yui-u,.yui-gb .yui-gf .yui-u{margin:0;}.yui-gb .yui-gb .yui-u{_margin-left:.7%;}.yui-gb .yui-g div.first,.yui-gb .yui-gb div.first{*margin-left:0;}.yui-gc .yui-g .yui-u,.yui-gd .yui-g .yui-u{*width:48.1%;*margin-left:0;}s .yui-gb .yui-gd div.first{width:32%;}.yui-g .yui-gd div.first{_width:29.9%;}.yui-ge .yui-g{width:24%;}.yui-gf .yui-g{width:74.2%;}.yui-gb .yui-ge div.yui-u,.yui-gb .yui-gf div.yui-u{float:right;}.yui-gb .yui-ge div.first,.yui-gb .yui-gf div.first{float:left;}.yui-gb .yui-ge .yui-u,.yui-gb .yui-gf div.first{*width:24%;_width:20%;}.yui-gb .yui-ge div.first,.yui-gb .yui-gf .yui-u{*width:73.5%;_width:65.5%;}.yui-ge div.first .yui-gd .yui-u{width:65%;}.yui-ge div.first .yui-gd div.first{width:32%;}#bd:after,.yui-g:after,.yui-gb:after,.yui-gc:after,.yui-gd:after,.yui-ge:after,.yui-gf:after{content:".";display:block;height:0;clear:both;visibility:hidden;}#bd,.yui-g,.yui-gb,.yui-gc,.yui-gd,.yui-ge,.yui-gf{zoom:1;}
+    :stylus
+      bwidth = 720
+
+      p, ul, li, h1, h2, h3
+        margin-top 5px;
+
+      #header
+        background-color black
+        color white
+        padding 0 0 5px 10px
+
+      ::selection, ::-moz-selection, ::-webkit-selection
+        background #666
+        color #fff
+
+      .soft
+        //
+
+      .hard
+        display none
+
+      html
+        background-color #FFFFFFF
+
+      serif()
+        font-family Garamond, Georgia, New York Times, Times New Roman, serif
+
+      body
+        margin 10px auto
+        font-size 12pt
+        width bwidth
+
+      .threecol
+        float left
+        width (bwidth / 3)
+
+      .clear
+        clear both
+
+      .right
+        float right
+        margin-left 5px
+
+      hr
+        clear both
+
+      h1
+        font-size 2em
+        serif()
+
+      .subtitle
+        margin 20px 10px 0 0
+        color #999
+        float right
+
+      .details
+        display inline
+        color #666
+
+      a
+        color #39f
+        text-decoration none
+
+      h2
+        font-size 1.5em
+        margin-left 10px
+        serif()
+
+      .indent
+        margin-left 30px
+
+      li
+        list-style-type square
+        margin-left 1.5em
+
+      h3
+        margin-left 20px
+        serif()
+
+      .skill
+        display inline
+        padding-right 0.5em
+
+    title Viktor Stanchev - Resume
+  body
+    #header
+      .subtitle If it ain't broke it doesn't have enough features yet.
+      h1 Viktor Stanchev
+
+    hr.clear
+
+    .threecol.details
+      p 2B Software engineering
+      p University of Waterloo
+    .threecol.details
+      p Student ID: 20344377
+      p Email: me@viktorstanchev.com
+      p Phone: (415) 216-7696
+    .threecol.details
+      p Portfolio: 
+        a(href="http://viktorstanchev.com") viktorstanchev.comc
+      p Blog: 
+        a(href="http://viktorstanchev.com/blog") viktorstanchev.com/blog
+
+    .clear
+    hr
+
+    h2 Skills
+    ul.indent
+      li Programming (descending, by skill): JavaScript, PHP, Scala, Java, Python, C, C#, C++
+      //, Haskell, Ruby
+      li Operating Systems: CentOS, Ubuntu, Windows
+      li Web technologies:
+        p Node.js: Worked with many modules such as express, stylus, jade, socket.io, nodemon, and vows
+        p PHP: Drupal 6 and 7 (module development), built multiple CMSs
+        p Front end: HTML, CSS, JavaScript (jquery, mustache, backbone, etc.), single page apps
+      li Hardware: Can use oscilloscope, multimeter, soldering iron, bread boards, FPGAs, microcontrollers
+      li Academic exposure to MATLAB, FPGAs, digital and analog circuits, computer architecture, ADC/DAC, and 68k assembly
+      li Misc: MySQL, Apache, Git, SVN, web application penetration testing
+
+
+    h2 Personal Projects
+    ul.indent
+      li
+        .right 2012
+        p 
+          b Recent Adventures / conversation starters:
+        ul
+          li Learning Haskell 
+            a(href="http://viktorstanchev.com/latent_semantic_analysis_in_haskell") (implemented LSA)
+          li Multiplayer, online Conway's Game of Life 
+            a(href="http://gofl.nodejitsu.com/") (very alpha)
+          li Node.js - 
+            a(href="http://stigdb.org/") StigDB 
+            | interface
+          li Taking Udacity 
+            a(href="http://www.udacity.com/overview/Course/cs373") self driving car course
+      li 
+        .right 2011
+        p
+          a(href="http://wattools.com") WatTools
+        p Wiki-style repository of useful tools for Waterloo students with a GUI for editing. 
+        p Technologies: PHP, JavaScript, mustache, jQuery plugins 
+          a(href="http://viktorstanchev.com/blog/wattools-and-other-news") (blog)
+      li 
+        .right 2009 - 2010
+        p
+          a(href="http://viktorstanchev.com/node/12") Co-op map 
+          | (currently offline)
+        p Facebook application for Waterloo students to share their co-op placements on a map.
+        p Technologies: PHP, HTML, CSS, MySQL, JavaScript, Google Maps API, Facebook API
+      li
+        .right 2007 - 2009
+        p
+          a(href="http://captionsearch.com/best.php") CaptionSearch
+        p Website for sharing funny or interesting images with ~1000 visitors per day.
+        p Image uploading, multiple user tiers, automatic promotion of users, content categorization and filtering.
+        p Technologies: PHP, HTML, CSS, MySQL 
+          a(href="http://viktorstanchev.com/node/4") (blog)
+      li
+        .right 2011
+        p
+          a(href="http://rpg.no.de") node-rpg
+        p The foundations of a multiplayer RPG game: chat, multiple rooms, state synchronisation, 2D engine - all in 48 hours.
+        p Built real time browser communications with node.js, HTML5 canvas, and Web Sockets for Node Knockout. 
+          a(href="http://viktorstanchev.com/blog/node-knockout-node-rpg") (blog)
+      li
+        a(href="http://viktorstanchev.com/projects") Other...
+        
+    h2 Education
+    ul.indent
+      .right 2009 - present
+      li Candidate for Bachelor of Applied Science, Software Engineering 
+        .details University of Waterloo, Waterloo, ON, Canada
+      .right 2005 - 2009
+      li International Baccalaureate and OSSD 
+        .details Weston Collegiate Institute, Toronto, ON, Canada
+    
+
+    h2 Interests
+    p.indent Genetic algorithms, machine learning, networks, security, reverse engineering, spam, embedded systems
+
+    h2 Work Experience
+    ul.indent
+      .right Winter 2012
+      li Software Engineer - Tagged Inc.
+        ul
+          li Implemented a machine learning algorithm for spam detection 
+          li Technologies: Java, Scala, JavaScript, Spring, Ubuntu, etc.
+      .right Summer 2011
+      li Web Application Developer - SpeechBobble Inc.
+        ul
+          li Feature development, bug fixes
+          li Many significant contributions to the secuirty of the app
+          li Technologies: Java, JavaScript, MySQL, FogBugz, JBoss, Tomcat, etc.
+      .right Fall 2010
+      li Drupal Developer - Enomaly Inc.
+        ul
+          li Developed and improved custom modules for Drupal 6, designed database tables, etc.
+          li Technologies: PHP, Apache, JavaScript, MySQL, Trac, SVN, AJAX, jQuery, CSS, GIMP, Ubuntu, Tomcat, Solr, etc.
+      .right Winter 2010
+      li Testing and Documentation - Enomaly
+        ul
+          li Developed automated testing systems for a REST API using Python
+          li Developed modules for various frameworks such as Drupal 6, Drupal 7, libcloud
+          li Technologies: PHP, JavaScript, MySQL, Trac, SVN, Python, Sphinx, CentOS, etc.
