@@ -1,9 +1,9 @@
-var express = require('express')
-  , stylus = require('stylus')
-  , jade = require('jade')
-  , fs = require('fs');
+var express = require('express'),
+  stylus = require('stylus'),
+  jade = require('jade'),
+  fs = require('fs');
 
-var app = express.createServer();
+var app = express();
 
 app.configure( function(){
   app.set('view engine', 'jade');
@@ -19,7 +19,10 @@ var linkify;
       'Jade': 'http://jade-lang.com/',
       'Stylus': 'http://learnboost.github.com/stylus/',
       'International Baccalaureate': 'http://ibo.org',
-      'Sphinx': 'http://sphinx.pocoo.org/'
+      'Sphinx': 'http://sphinx.pocoo.org/',
+      'Kafka': 'https://kafka.apache.org/',
+      'InGraphs': 'http://engineering.linkedin.com/32/eric-intern-origin-ingraphs',
+      'dustjs': 'http://linkedin.github.com/dustjs/'
     };
     var r_str = '';
     for(var r in replacements){
@@ -31,21 +34,22 @@ var linkify;
   linkify = function (data) {
     return data.replace(re, function(match) {
       var r = replacements[match];
-      if(r != undefined){
+      if(r !== undefined){
         return '<a href="' + r + '">' + match + '</a>';
       } else {
         return match;
       }
     });
-  }
+  };
 
-})()
+})();
 
 app.get('/', function(req, res) {
   fs.readFile(__dirname + '/resume.jade', function(err, data){
     if(err) throw err;
     data = (jade.compile(data))();
-    data = linkify(data)
+    data = linkify(data);
+    fs.writeFile(__dirname + '/resume.html', data);
     res.send(data);
   });
 });
