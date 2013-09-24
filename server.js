@@ -13,7 +13,7 @@ app.configure( function(){
 var linkify;
 
 (function(){
-    var replacements = {
+    var replacements = {}; /*{
       'libcloud': 'http://libcloud.apache.org/',
       'Node Knockout': 'http://nodeknockout.com/',
       'Jade': 'http://jade-lang.com/',
@@ -23,7 +23,7 @@ var linkify;
       'Kafka': 'https://kafka.apache.org/',
       'InGraphs': 'http://engineering.linkedin.com/32/eric-intern-origin-ingraphs',
       'dustjs': 'http://linkedin.github.com/dustjs/'
-    };
+    };*/
     var r_str = '';
     for(var r in replacements){
       r_str += r + '|';
