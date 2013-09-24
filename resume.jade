@@ -13,7 +13,7 @@ html
       bwidth = 720
 
       h2
-        margin-top 20px
+        margin-top 23px
 
       ul>li
         margin-top 10px
@@ -66,12 +66,15 @@ html
         float right
 
       .details
-        display inline
         color #666
 
       a
         color #39f
         text-decoration none
+
+      .nobullet>li
+        list-style-type none
+        margin-left 0
 
       h2
         font-size 1.5em
@@ -110,7 +113,7 @@ html
     hr
 
     h2 Work Experience
-    ul
+    ul.nobullet
       .right Summer 2013
       li 
         b LinkedIn 
@@ -154,29 +157,34 @@ html
           li Technologies: PHP, Apache, JavaScript, MySQL, Trac, SVN, AJAX, jQuery, CSS, GIMP, Ubuntu, Tomcat, Solr, etc.
 
     h2 Projects
-    ul
-      li Recent adventures / Conversation starters:
+    ul.nobullet
+      li
+        b Recent adventures / Conversation starters:
         ul
           li Peer to peer social network with end-to-end encryption and no third parties
           li Multiplayer, online Conway's Game of Life 
-      li Network Code Module
+      li
+        b Network Code Module
         .right 2013
         ul
           li Built a kernel module for RT linux that implements Sebastian Fishmeister's language for real time network schedules
           li Source paper: 
             i Fischmeister, Oleg Sokolsky and Insup Lee, "Network-Code Machine: Programmable Real-Time Communication Schedules Sebastian"
           li Technologies: Arch Linux, C, Python, bash, HTML, Bootstrap, JavaScript, CSS
-      li WatTools
+      li
+        b WatTools
         .right 2011
         ul
           li Crowd sourced repository of useful tools for Waterloo students with a custom GUI for editing
           li Technologies: PHP, JavaScript, mustache, backbone.js, jQuery plugins
-      li Co-op map 
+      li
+        b Co-op map 
         .right 2009 - 2010
         ul
           li Facebook application for Waterloo students to share their co-op placements on a map
           li Technologies: PHP, HTML, CSS, MySQL, JavaScript, Google Maps API, Facebook API
-      li CaptionSearch
+      li
+        b CaptionSearch
         .right 2007 - 2009
         ul
           li Website for sharing funny or interesting images with ~1000 visitors per day.
@@ -184,22 +192,16 @@ html
           li Technologies: PHP, HTML, CSS, MySQL
 
     h2 Education
-    .right 2009 - present
-    ul
-      li Candidate for Bachelor of Software Engineering
-        br
-        | Cumulative Average ~85%
-        br
-        .details University of Waterloo, Waterloo, ON, Canada
-      li International Baccalaureate and OSSD 
+    ul.nobullet
+      li Candidate for Bachelor of Software Engineering - University of Waterloo, Waterloo, ON, Canada
+        .right 2009 - present
+        ul
+          li Cumulative Average ~85%
+      li International Baccalaureate and OSSD - Weston Collegiate Institute, Toronto, ON, Canada
         .right 2005 - 2009
-        br
-        .details Weston Collegiate Institute, Toronto, ON, Canada
-    
 
     h2 Interests
-    ul
-      li Software architecture, operating systems, security, social networks, genetic algorithms, machine learning, reverse engineering, social justice, privacy
+    p Software architecture, operating systems, security, social networks, genetic algorithms, machine learning, reverse engineering, social justice, privacy
 
     h2 Misc. Skills
     ul.nospace
@@ -214,4 +216,4 @@ html
       li Web technologies: node.js, HTML, CSS, JavaScript (jQuery, mustache, bootstrap, backbone, etc.), single page apps, content management systems (Drupal and custom ones)
       li Hardware: Can use oscilloscope, multimeter, soldering iron, bread boards, FPGAs, microcontrollers
       li Academic exposure to MATLAB, FPGAs, digital and analog circuits, computer architecture, ADC/DAC, and 68k and MIPS assembly
-      li Misc: MySQL, Apache, Git, SVN, redis, MongoDB, Android
+      li MySQL, Apache, Git, SVN, redis, MongoDB, Android
