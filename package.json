@@ -2,8 +2,8 @@
   "name": "resume-builder",
   "version": "0.0.1",
   "dependencies": {
-    "express": "*",
+    "express": "~3.0.0",
     "stylus": "*",
-    "jade": "*"
+    "jade": "~0.35.0"
   }
 }
